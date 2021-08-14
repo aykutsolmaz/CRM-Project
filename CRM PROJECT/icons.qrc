@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/rpath.ico</file>
+    <file>icons/scwpath.ico</file>
+    <file>icons/edit.ico</file>
+    <file>icons/add.ico</file>
+    <file>icons/atom.ico</file>
+  </qresource>
+</RCC>

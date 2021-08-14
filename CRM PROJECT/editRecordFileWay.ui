@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>editRecodFileWayUi</class>
+ <widget class="QMainWindow" name="editRecodFileWayUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>135</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>590</width>
+    <height>135</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>590</width>
+    <height>135</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Kayıt Dosyalarının Konumu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kayıtların Bulunduğu Konum</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_recordPath">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>551</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fileBrowse_Btn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 3px;
+background-color: rgb(255, 255, 255);
+border-top: 1px solid rgb(0, 0, 0);
+border-bottom: 1px solid rgb(0, 0, 0);
+border-left: 1px solid rgb(0, 0, 0);
+border-right: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+	
+	background-color: rgba(230, 230, 230, 252);
+}
+
+QPushButton:pressed{
+	
+	background-color: rgb(200, 200, 200);
+}</string>
+    </property>
+    <property name="text">
+     <string>DOSYA SEÇ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="filePathSave_Btn">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 3px;
+background-color: rgb(255, 255, 255);
+border-top: 1px solid rgb(0, 0, 0);
+border-bottom: 1px solid rgb(0, 0, 0);
+border-left: 1px solid rgb(0, 0, 0);
+border-right: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+	
+	background-color: rgba(230, 230, 230, 252);
+}
+
+QPushButton:pressed{
+	
+	background-color: rgb(200, 200, 200);
+}</string>
+    </property>
+    <property name="text">
+     <string>KAYIT</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

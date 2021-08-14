@@ -1,0 +1,60 @@
+QDateEdit{
+background-color: rgb(239, 239, 239);
+selection-color: rgb(0, 0, 0);
+border-top: 1px solid rgb(0, 0, 0);
+border-bottom: 1px solid rgb(0, 0, 0);
+border-left: 1px solid rgb(0, 0, 0);
+border-right: 1px solid rgb(0, 0, 0);
+}
+QCalendarWidget QToolButton {
+  	height: 20px;
+  	width: 50px;
+  	color: white;
+  	font-size: 12px;
+  	icon-size: 18px, 18px;
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);
+  }
+  QCalendarWidget QMenu {
+  	width: 50px;
+  	left: 20px;
+  	color: white;
+  	font-size: 10px;
+  	background-color: rgb(100, 100, 100);
+  }
+  QCalendarWidget QSpinBox { 
+  	width: 50px; 
+  	font-size:12px; 
+  	color: white; 
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }
+  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:20px; }
+  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:20px;}
+  QCalendarWidget QSpinBox::up-arrow { width:18px;  height:18px; }
+  QCalendarWidget QSpinBox::down-arrow { width:18px;  height:18px; }
+   
+  /* header row */
+  QCalendarWidget QWidget { alternate-background-color: rgb(128, 128, 128); }
+   
+  /* normal days */
+  QCalendarWidget QAbstractItemView:enabled 
+  {
+  	font-size:12px;  
+  	color: rgb(180, 180, 180);  
+  	background-color: black;  
+  	selection-background-color: rgb(64, 64, 64); 
+  	selection-color: rgb(0, 255, 0); 
+  }
+   
+  /* days in other months */
+  /* navigation bar */
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{ 
+  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
+}
+
+QCalendarWidget QAbstractItemView:disabled 
+{ 
+color: rgb(64, 64, 64); 
+}

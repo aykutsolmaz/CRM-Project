@@ -1,0 +1,1962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>590</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>590</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sertifika Kayıt Programı</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icons/atom.ico</normaloff>:/icons/icons/atom.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(247, 247, 247);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>570</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>570</width>
+      <height>5</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>570</width>
+      <height>5</height>
+     </size>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>451</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0" columnstretch="0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="add_device">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>EKLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Marka:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Model:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="cb_device">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxVisibleItems">
+        <number>10</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cb_department">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="cb_model">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxCount">
+        <number>2147483647</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="kn_no">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Bulunduğu Yer:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Künye No:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="add_model">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>EKLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="seri_no">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="add_department">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>EKLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="cb_brand">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Seri No:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="add_brand">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>EKLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cihaz Adı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nezaret Eden:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nezaret_eden">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>451</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>5</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>5</height>
+     </size>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>111</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="movement">
+     <enum>QListView::Static</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,6,1">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="line_isno">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="line_birlik">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cb_hospitalcode">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::NoInsert</enum>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cb_hospital">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="currentText">
+          <string/>
+         </property>
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>30</number>
+         </property>
+         <property name="insertPolicy">
+          <enum>QComboBox::NoInsert</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBoxHospitalFix">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Sabitle</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="addRecordFrame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>570</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>570</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>570</width>
+      <height>125</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 247, 247);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>130</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <strikeout>false</strikeout>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::UpDownArrows</enum>
+     </property>
+     <property name="accelerated">
+      <bool>false</bool>
+     </property>
+     <property name="showGroupSeparator" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="currentSection">
+      <enum>QDateTimeEdit::DaySection</enum>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="timeSpec">
+      <enum>Qt::LocalTime</enum>
+     </property>
+     <property name="date">
+      <date>
+       <year>2020</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>400</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>400</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="pageOnebyOne">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QCheckBox" name="checkBoxCommentFix">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>75</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Sabitle</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxComment">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>75</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Yorum</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_calibperson">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>5</y>
+         <width>130</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tag_code_end">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>5</y>
+         <width>40</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="CommentBox">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>30</y>
+         <width>300</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>350</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_record">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>KAYIT</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tag_code_front">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>5</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(239, 239, 239);
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="pageSerial">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QCheckBox" name="checkBoxCommentSerial">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>45</y>
+         <width>75</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Yorum</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="CommentBoxSerial">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>30</y>
+         <width>300</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_recordSerial">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255)
+}
+
+QPushButton:pressed{
+	
+	background-color:rgb(170, 0, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>KAYIT</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_calibpersonSerial">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>5</y>
+         <width>130</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tag_code_frontSerial">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>5</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(239, 239, 239);
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tag_code_endSerial">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>5</y>
+         <width>40</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>5</y>
+         <width>20</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>--</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tag_code_to_endSerial">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>5</y>
+         <width>41</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxSelectSerial">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>50</y>
+       <width>100</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Seri Oluştur</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="enterValueFrame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>570</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>570</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>570</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 247, 247);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QStackedWidget" name="deviceStackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>570</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>570</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>570</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="emptyPage"/>
+     <widget class="QWidget" name="ameliyatlambasi">
+      <widget class="QLineEdit" name="lxValue">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>15</y>
+         <width>100</width>
+         <height>18</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>125</x>
+         <y>15</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Işık Yoğunluğu (Lux) :</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>50</y>
+         <width>570</width>
+         <height>5</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>570</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>570</width>
+         <height>5</height>
+        </size>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="sicaklikolcum">
+      <widget class="QLineEdit" name="celciusValue">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>15</y>
+         <width>100</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>15</y>
+         <width>139</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Referans Cihaz Değeri (°C):</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>50</y>
+         <width>570</width>
+         <height>5</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>570</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>570</width>
+         <height>5</height>
+        </size>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="defibrilator">
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>76</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Maksimum Güç:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>15</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Şarj Süresi:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>355</x>
+         <y>15</y>
+         <width>85</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gecikme Zamanı:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="maxPower">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>15</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="chargeTime">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>15</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="delayTime">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>15</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>50</y>
+         <width>570</width>
+         <height>5</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>570</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>570</width>
+         <height>5</height>
+        </size>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>SF Compact Display</family>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>590</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(247, 247, 247);</string>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="CustomerOperation">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid; 
+border-color: rgb(121, 121, 121);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(232, 232, 232);
+
+QMenuBar::item:selected { 
+    background: rgb(238, 238, 238)	;
+}
+
+</string>
+    </property>
+    <property name="title">
+     <string>Müşteri İşlemleri</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="addCustomer"/>
+    <addaction name="editCustomer"/>
+   </widget>
+   <widget class="QMenu" name="DosyaOperation">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid; 
+border-color: rgb(121, 121, 121);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(232, 232, 232);
+
+QMenuBar::item:selected { 
+    background: rgb(238, 238, 238)	;
+}</string>
+    </property>
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="editSCW"/>
+    <addaction name="editRFW"/>
+   </widget>
+   <addaction name="DosyaOperation"/>
+   <addaction name="CustomerOperation"/>
+  </widget>
+  <action name="actionVeri_Kay_t_Noktalar_D_zenle">
+   <property name="text">
+    <string>Veri Kayıt Noktaları Düzenle</string>
+   </property>
+  </action>
+  <action name="addCustomer">
+   <property name="text">
+    <string>Müşteri Ekle</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="editCustomer">
+   <property name="text">
+    <string>Müşteri Düzenle</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actiona">
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="actionb">
+   <property name="text">
+    <string>b</string>
+   </property>
+  </action>
+  <action name="editSCW">
+   <property name="text">
+    <string>Standart Sertifika Konumu Düzenle</string>
+   </property>
+  </action>
+  <action name="editRFW">
+   <property name="text">
+    <string>Kayıt Konumu Düzenle</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>cb_hospitalcode</tabstop>
+  <tabstop>checkBoxHospitalFix</tabstop>
+  <tabstop>cb_hospital</tabstop>
+  <tabstop>nezaret_eden</tabstop>
+  <tabstop>cb_department</tabstop>
+  <tabstop>cb_device</tabstop>
+  <tabstop>cb_brand</tabstop>
+  <tabstop>cb_model</tabstop>
+  <tabstop>seri_no</tabstop>
+  <tabstop>kn_no</tabstop>
+  <tabstop>celciusValue</tabstop>
+  <tabstop>tag_code_end</tabstop>
+  <tabstop>cb_calibperson</tabstop>
+  <tabstop>checkBoxComment</tabstop>
+  <tabstop>checkBoxCommentFix</tabstop>
+  <tabstop>CommentBox</tabstop>
+  <tabstop>add_record</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>add_department</tabstop>
+  <tabstop>add_device</tabstop>
+  <tabstop>add_brand</tabstop>
+  <tabstop>add_model</tabstop>
+  <tabstop>line_isno</tabstop>
+  <tabstop>line_birlik</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>tag_code_front</tabstop>
+  <tabstop>tag_code_frontSerial</tabstop>
+  <tabstop>tag_code_endSerial</tabstop>
+  <tabstop>tag_code_to_endSerial</tabstop>
+  <tabstop>lxValue</tabstop>
+  <tabstop>add_recordSerial</tabstop>
+  <tabstop>CommentBoxSerial</tabstop>
+  <tabstop>checkBoxCommentSerial</tabstop>
+  <tabstop>cb_calibpersonSerial</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
